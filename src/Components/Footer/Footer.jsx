@@ -3,7 +3,7 @@ import AquaTradeBD from "../../Shared/AquaTradeBD/AquaTradeBD";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-gray-800 text-gray-300 p-10">
+      <footer className="footer sm:footer-horizontal bg-slate-700 text-gray-300 p-10">
         <aside>
            <AquaTradeBD/>
           <p>
@@ -33,7 +33,7 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </nav>
       </footer>
-      <div className="footer sm:footer-horizontal footer-center bg-gray-800 text-gray-300 p-4">
+      <div className="footer sm:footer-horizontal footer-center bg-slate-700 text-gray-300 p-4">
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by AquaTradeBD

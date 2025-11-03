@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 
 const RootLayout = () => {
     return (
-        <div className="bg-gray-200">
+        <div className="bg-slate-100">
             <Navbar/>
             <div className="min-h-[calc(100vh-64px)] max-w-[2520px] mx-auto md:px-10 lg:px-20">
             <Outlet/>
@@ -15,5 +15,3 @@ const RootLayout = () => {
 };
 
 export default RootLayout;
-
-// min-h-[calc(100vh-64px)]
