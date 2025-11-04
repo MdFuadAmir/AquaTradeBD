@@ -59,7 +59,7 @@ const DashboardLayout = () => {
                 // onClick={handleCloseDrawer}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-teal-300 font-semibold bg-teal-700"
+                    ? "text-teal-300 font-semibold bg-slate-700"
                     : "text-white"
                 }
               >

@@ -7,6 +7,7 @@ import RootLayout from "../Layouts/RootLayout/RootLayout";
 import Home from "../Pages/Home/Home/Home";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import Products from "../Pages/Products/Products";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>,
+      },
+      {
+        path: "/products",
+        element: <Products/>,
       },
       {
         path: "/about-us",

@@ -1,12 +1,12 @@
-import { FaFish, FaUsers, FaLeaf, FaGlobeAsia, FaHeart } from "react-icons/fa";
-
+import {FaUsers, FaLeaf, FaGlobeAsia, FaHeart } from "react-icons/fa";
+import banner from "../../assets/about&contact/img-2.jpg"
 const AboutUs = () => {
   return (
     <div className="text-gray-800">
       {/* ========== HERO SECTION ========== */}
       <section className="relative overflow-hidden h-[300px] md:h-[400px] flex items-center justify-center">
         <img
-          src=""
+          src={banner}
           alt="Contact Banner"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
