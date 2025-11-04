@@ -1,18 +1,33 @@
 import { Link } from "react-router";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { useForm } from "react-hook-form";
+import useAuth from "../../Hooks/useAuth";
 
 const SignUp = () => {
+  const {creatUser} = useAuth();
     const {
         register,
+        handleSubmit,
         formState: { errors },
       } = useForm();
+      const onSubmit = (data)=>{
+        console.log(data);
+        creatUser(data.email,data.password)
+        .then((result)=>{
+          const user = result.user;
+          console.log(user);
+        })
+        .catch((error)=>{
+          console.log(error);
+        })
+
+      }
   return (
     <div className="p-4 bg-slate-400 shadow-2xl rounded-xl">
       <h1 className="text-4xl font-bold text-center underline text-gray-800 mb-8 tracking-wide drop-shadow-lg">
         Create Account
       </h1>
-      <form className="space-y-4">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         {/* Profile Picture */}
           <div className="flex items-center gap-4">
             <div className="border border-teal-300 h-24 w-24 rounded-xl">

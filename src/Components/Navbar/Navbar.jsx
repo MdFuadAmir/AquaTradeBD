@@ -9,7 +9,7 @@ const Navbar = () => {
     <li><NavLink to={'/contact-us'}>Contact Us</NavLink></li>
     </>
     return (
-        <div className="navbar bg-slate-600 text-white md:px-10 lg:px-20">
+        <div className="navbar bg-slate-600 md:px-10 lg:px-20">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -17,14 +17,14 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content text-black bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
             {navLink}
       </ul>
     </div>
     <AquaTradeBD/>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+    <ul className="menu menu-horizontal px-1 text-white">
       {navLink}
     </ul>
   </div>
